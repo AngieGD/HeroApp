@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { ErrorComponent } from './share/error/error.component';
 
+import { HttpClientModule } from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { ErrorComponent } from './share/error/error.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
